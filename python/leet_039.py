@@ -5,7 +5,7 @@ class Solution(object):
             self.retList.append(ans[:])
         for i in range(index, len(candidates)):
             if target < candidates[i]:
-                # remain of the candidates all greater than target
+                # remain of the candidates all greater than target, 
                 return
             ans.append(candidates[i])
             self.depthFirstSearch(candidates, target - candidates[i], i, ans)
