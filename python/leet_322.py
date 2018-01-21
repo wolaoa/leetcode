@@ -14,3 +14,6 @@ class Solution(object):
                 if j <= i:
                     times[i] = min(times[i], times[i - j] + 1)
         return times[amount] if times[amount] < amount + 1 else  -1
+        
+
+
