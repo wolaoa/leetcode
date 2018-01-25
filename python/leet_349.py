@@ -12,6 +12,7 @@ class Solution(object):
         nums2.sort()
         
         res = set()
+
         
         i = j = 0
         while i < lenNum1 and j < lenNum2:
