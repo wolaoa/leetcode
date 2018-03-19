@@ -21,7 +21,7 @@ class Solution(object):
         if newLen == 0:
             return 0
 
-        # merge adjecent or sub gaps
+        # merge adjecent or sub 
         startPos = gaps[0][0]
         endPos   = gaps[0][1]
         res = endPos - startPos + 1
