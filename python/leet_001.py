@@ -21,8 +21,8 @@ class Solution(object):
 	if tempL == tempR:
 	    return [-1, -1]
 	# STEP 3: get index【O(n)】
-	leftIndex  = num.index(sortedNum[tempL])
-	rightIndex = num.index(sortedNum[tempR])
+	leftIndex  = nums.index(sortedNum[tempL])
+	rightIndex = nums.index(sortedNum[tempR])
 	if leftIndex == rightIndex:
 	   rightIndex = nums[leftIndex + 1:].index(sortedNum[tempL]) + leftIndex + 1 
 	return min(leftIndex, rightIndex),max(leftIndex, rightIndex)
